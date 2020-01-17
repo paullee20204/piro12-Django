@@ -1,3 +1,10 @@
 {
-    "python.pythonPath": "C:\\Users\\paulk\\AppData\\Local\\Programs\\Python\\Python37\\python.exe"
+    "python.pythonPath": "C:\\Users\\paulk\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "workbench.settings.useSplitJSON": true,
+    "python.linting.pylintArgs": [
+        "--disable","C0111,C0301",
+        "--load-plugins","pylint_django"
+    ],
 }

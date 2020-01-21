@@ -2,6 +2,9 @@
 {% load humanize %}
 {% block content %}
     <h2>{{  item.name }}</h2>
+    {% if item.photo %}
+        <img src="{{ item.photo.url }}" style="max-width: 100%;"/>
+    {% endif %}
     {{ item.price|intcomma }}원
 
     {%  if item.desc %}
